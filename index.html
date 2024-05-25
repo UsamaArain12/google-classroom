@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Class Room Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <section class="navbar-brand">
+                <span class="material-icons menu-icon"> menu </span>
+                <img class="brand-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google Logo" />
+                <span class="brand-text">Classroom</span>
+            </section>
+            <section class="navbar-menu">
+                <span class="material-icons add-icon" onclick="openForm()"> add </span>
+                <span class="material-icons apps-icon"> apps </span>
+                <span class="material-icons big-img account-icon"> account_circle </span>
+                <span>Usama Arain</span>
+            </section>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="secondary-header">
+            <div class="secondary-icon-container">
+                <span class="material-icons-outlined"> fact_check </span>
+                <span class="secondary-icon-text">To do</span>
+            </div>
+            <div class="secondary-icon-container">
+                <span class="material-icons calender-icon"> calendar_today </span>
+                <span class="secondary-icon-text">Calender</span>
+            </div>
+        </section>
+        <section id="last-section">
+            <div id="addForm" style="display: none;">
+                <label for="className">Class Name:</label>
+                <input type="text" id="className" required>
+
+                <label for="sectionName">Section Name:</label>
+                <input type="text" id="sectionName" required>
+
+                <label for="teacherName">Teacher Name:</label>
+                <input type="text" id="teacherName" required>
+
+                <button onclick="addClass()">Add Class</button>
+            </div>
+        </section>
+    </main>
+    
+    <span class="material-icons help-icon"> help_outline </span>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
